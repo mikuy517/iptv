@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Askbootstrap">
+      <meta name="author" content="ZSultan">
+      <title>SZoneph IPTV Player</title>
+      <!-- Favicon Icon -->
+      <link rel="icon" type="https://szoneph.online/api/image/png" href="img/favicon.png">
+      <!-- Bootstrap core CSS-->
+      <link href="https://szoneph.online/api/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom fonts for this template-->
+      <link href="https://szoneph.online/api/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+      <!-- Custom styles for this template-->
+      <link href="https://szoneph.online/api/css/osahan.css" rel="stylesheet">
+      <!-- Owl Carousel -->
+      <link rel="stylesheet" href="https://szoneph.online/api/vendor/owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="https://szoneph.online/api/vendor/owl-carousel/owl.theme.css">
+        </script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/clappr.chromecast-plugin/latest/clappr-chromecast-plugin.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/mokoshalb/clappr-ads/ads.js"></script>
+       <script type="text/javascript" src="https://szoneph.online/api/js/player-error.js"></script>
+   </head>
+   <body id="page-top">
+     <div class="video-block section-padding">
+                  <div class="row">
+                     <div class="col-md-12">
+                            <div id="TeLaSe"></div>
+                            <script>
+                                var playerElement = document.getElementById("TeLaSe");
+                                var player = new Clappr.Player({
+                                    source: "",
+                                    mimeType: 'application/vnd.apple.mpegurl',
+                                    width: '100%',
+                                    height: 'calc(80vh - 80px)',
+                                    autoPlay: false,
+                                    watermark: "",
+                                    watermarkLink: "h",
+                                    position: 'bottom-right',
+                                    mediacontrol: {seekbar: "#00FF00", buttons: "#FFFFFF"},
+                                    mute: false,
+                                    disableErrorScreen: true, // Disable the internal error screen plugin
+                                    plugins: [ChromecastPlugin,ErrorPlugin,LevelSelector,ClapprAds],
+                                    chromecast: {
+                                        appId: "9DFB77C0",
+                                        contentType: "video/m3u8",
+                                        media: {
+                                            type: ChromecastPlugin.None,
+                                            title: "IPTV",
+                                            subtitle: "IPTV Streaming Service"
+                                        }
+                                    },
+                                    errorPlugin: {
+                                        onRetry: function(e) {
+                                        }
+                                      },
+                                    disableVideoTagContextMenu: true,
+                                    playbackNotSupportedMessage: 'Your browser is not supported.'
+                                });
+                                player.attachTo(playerElement);
+                            </script>
+                     </div>
+                  </div>
+               </div>
+               <hr class="mt-0">
+            </div>
+         </div>
+         <!-- /.content-wrapper -->
+      </div>
+      <!-- /#wrapper -->
+      <h3 style="display: flex; flex-wrap: wrap; padding: 8px;">Available Channel</h3>
+
+   
+      <table class="table table-dark">
+         <thead>
+           <tr>
+             <th scope="col"><a class="channel nav-link" href="a2z.html"><button type="button" class="btn btn-success" style="display: block; width: 100%; color: #fff; text-shadow: 0px 1px 2px #000;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/TV5_%28Philippines%29_logo.svg/1024px-TV5_%28Philippines%29_logo.svg.png" width="30px"/></a></th>
+             <th scope="col"><a class="channel nav-link" data-value="http://mag.1da.tv:2095/play/live.php?mac=00:1A:79:5F:53:FA&stream=297581&extension=m3u8" href="javascript:void(0);"><img src="https://static.wikia.nocookie.net/logopedia/images/5/5c/One_Sports_plus_logo.png" width="30px"/></a></th>
+             <th scope="col"><a class="channel nav-link" data-value="https://qp-pldt-live-grp-05-prod.akamaized.net/out/u/radyo5_qp.m3u8" href="javascript:void(0);"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Radyo5truefmlogo.webp/600px-Radyo5truefmlogo.webp.png" width="30px"/></a></th>
+             <th scope="col"><a class="channel nav-link" data-value="https://live.cltv36.tv:5443/LiveApp/streams/live.m3u8" href="javascript:void(0);"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/CLTV_logo.png" width="30px"/></a></th>
+            </tr>
+         </thead>
+         <tbody>
+           <tr>
+             <th scope="row"><a class="channel nav-link" data-value="https://live.cltv36.tv:5443/LiveApp/streams/live.m3u8" href="javascript:void(0);"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/40/GTV_Philippines_Logo_Vector.svg/577px-GTV_Philippines_Logo_Vector.svg.png" width="30px"/></a></th>
+             <td><a class="channel nav-link" data-value="https://fashiontv-fashiontv-1-eu.rakuten.wurl.tv/playlist.m3u8" href="javascript:void(0);"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/1280px-Fashion_TV_logo.svg.png" width="30px"/></td>
+             <td><a class="channel nav-link" data-value="https://teleradyo-abscbn-ono.amagi.tv/playlist720_p.m3u8" href="javascript:void(0);"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/TeleRadyo_Serbisyo_logo.svg/1200px-TeleRadyo_Serbisyo_logo.svg.png" width="30px"/></td>
+              <td><a class="channel nav-link" data-value="https://cnn-cnninternational-1-eu.rakuten.wurl.tv/f93b9a949a4a8651dd5a2f42e3a2b6f9.m3u8" href="javascript:void(0);"><img src="https://1000logos.net/wp-content/uploads/2021/04/CNN-logo.png" width="30px"/></td>
+            </tr>
+           <tr>
+             <th scope="row"><a class="channel nav-link" data-value="https://cinemaone-abscbn-ono.amagi.tv/index.m3u8" href="javascript:void(0);"><img src="https://static.wikia.nocookie.net/tvfanon6528/images/d/d2/Cinema_One_%282013-.n.v.%29.png" width="30px"/></th>
+             <td><a class="channel nav-link" data-value="https://cinemo-abscbn-ono.amagi.tv/playlist.m3u8" href="javascript:void(0);"><img src="https://static.wikia.nocookie.net/russel/images/f/f2/Cine_Mo%21_3D_Logo_2011.png" width="30px"/></td>
+             <td><a class="channel nav-link" data-value="https://myxnola-abscbn-ono.amagi.tv/index.m3u8" href="javascript:void(0);"><img src="https://assets-myxglobal.abs-cbn.com/wp-content/uploads/2022/07/MYX_New_Logo_Web1.png" width="30px"/></td>
+	     <td><a class="channel nav-link" data-value="https://ancglobal-abscbn-ono.amagi.tv/playlist.m3u8" href="javascript:void(0);"><img src="https://img.mytfc.com/cmsroot/abscms/media/mytfctv/channels/anc/anc-logo.png" width="30px"/></td>
+           </tr>
+ 	<tr>
+             <th scope="row"><a class="channel nav-link" data-value="http://170.254.18.106/HBO_PLUS/index.m3u8" href="javascript:void(0);"><img src="https://www.nicepng.com/png/detail/223-2235574_1-hbo-http-hbo-plus-logo-png.png" width="30px"/></th>
+             <td><a class="channel nav-link" data-value="https://z88.ubtvfans.com/live/rx1/59/cb49382c9457a5f3586f9e0635594838/index.m3u8" href="javascript:void(0);"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Animax_logo.svg" width="30px"/></td>
+             <td><a class="channel nav-link" data-value="https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00718-outdoorchannela-outdoortvnz-samsungnz/playlist.m3u8" href="javascript:void(0);"><img src="https://cms.cignal.tv/Upload/Thumbnails/Outdoor-Channel-Thumbnail.png" width="30px"/></td>
+	     <td><a class="channel nav-link" data-value="https://kbsworld-ott.akamaized.net/hls/live/2002341/kbsworld/master.m3u8" href="javascript:void(0);"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/KBS_World_%282009%29.svg/2560px-KBS_World_%282009%29.svg.png" width="30px"/></td>
+           </tr>
+         </tbody>
+       </table>
+<script src="https://kit.fontawesome.com/dbeb83ac19.js" crossorigin="anonymous"></script>
+      <!-- Bootstrap core JavaScript-->
+      <script src="https://szoneph.online/api/vendor/jquery/jquery.min.js"></script>
+      <script src="https://szoneph.online/api/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Core plugin JavaScript-->
+      <script src="https://szoneph.online/api/vendor/jquery-easing/jquery.easing.min.js"></script>
+      <!-- Owl Carousel -->
+      <script src="https://szoneph.online/api/vendor/owl-carousel/owl.carousel.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+      <!-- Custom scripts for all pages-->
+      <script src="https://szoneph.online/api/js/custom.js"></script>
+   </body>
+</html>
