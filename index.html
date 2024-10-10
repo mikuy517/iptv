@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
 <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script>
 <script type="text/javascript" src="chrome-extension://cniohcjecdcdhgmlofniddfoeokbpbpb/trace-anything.js"></script>
 <script type="text/javascript" src="chrome-extension://cniohcjecdcdhgmlofniddfoeokbpbpb/eme-trace-config.js"></script>
@@ -7,31 +7,47 @@
 <script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="referrer" content="no-referrer">
-
-    <title>Watch IPTV v.1.0.6</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Stream your favorite TV m3u-playlist seamlessly with our feature-rich M3U IPTV browser app. It is completely free and easy to use!">
-    <meta name="keywords" content="IPTV, M3U, M3U8, M3U IPTV, M3U IPTV, Live, TV, Movie, Video, Smart, Smart TV, Playlist, Browser, Desktop, Mobile, Smartphone, free, easy, ad-free, CORS">
-    <meta name="author" content="Jaroslav Herber - Herber eDevelopment">
-    <link rel="canonical" href="http://watch-ad.rf.gd">
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/controls.css">
-    <link rel="stylesheet" type="text/css" href="css/epg.css">
-    <link rel="stylesheet" type="text/css" href="css/browser.css">
-    <script>
-        var sAppVersion = '2.2.4',
-            sDeviceFamily = 'Browser';
-    </script>
+    <title>MPEG-DASH Livestream</title>
+    <link rel="icon" href="https://img.freepik.com/premium-psd/play-icon-button-black-background_609989-2403.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/controls.css">
+    <script src="https://cdn.jsdelivr.net/npm/shaka-player@latest/dist/shaka-player.ui.debug.js"></script>
     <div id="uuidMachine" bis_skin_checked="1">47106412-5d70-4a3d-b31b-c9d53afc15e7</div>
     <script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]"
         src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/../executers/vi-tr.js"></script>
-    <script src="js/lang.js"></script>
-    <script src="js/lang-browser.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
-    <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+    <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins');
+        * {
+            font-family: 'Poppins';
+            font-size: 15px;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-weight: 300;
+            background: rgba(25, 32, 64, 255);
+        }
+        
+        #wrapper {
+            height: 90vh;
+        }
+        
+        #banner {
+            width: 100%
+        }
+        
+        #banner h1 {
+            margin: 0;
+            padding: 30px;
+        }
+        
+        truncated 2319bytes...
+    </style>
     <style>
             @keyframes loading {
             0% {
@@ -57,205 +73,133 @@
     </style>
 </head>
 
-<body id="body" class="browser" __processed_a2849d35-15ee-4b56-8ba5-03317006f6d3__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJMSU5LRURJTiI6ImRpc2FibGVkIiwiQ09ORklHIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjIuMC4xNiIsInNjb3JlIjoyMDAxNn1d">
-    <div id="history_manager" class="fullscreen" bis_skin_checked="1">
-        <div id="history_manager_content" class="fullscreen-popup" bis_skin_checked="1"></div>
-    </div>
-    <div id="settings" bis_skin_checked="1" style="display: none;">
-        <div id="settings_form" bis_skin_checked="1">
-            <div id="settings_tabs" bis_skin_checked="1">
-                <div id="settings_general_tab" class="tab i18n active" onclick="toggleAdvancedSettings(1);" data-langid="tabGeneralSettings" bis_skin_checked="1">General Settings</div>
-                <div id="settings_advanced_tab" class="tab i18n" onclick="toggleAdvancedSettings(2);" data-langid="tabAdvancedSettings" bis_skin_checked="1">Advanced Settings</div>
-                <div class="CLEAR" bis_skin_checked="1"></div>
+<body bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJMSU5LRURJTiI6ImRpc2FibGVkIiwiQ09ORklHIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjIuMC4xNiIsInNjb3JlIjoyMDAxNn1d"
+    __processed_f8338384-0831-4192-a72e-4ebe0984da1d__="true">
+    <div id="ag-1728547728666" bis_skin_checked="1"></div>
+    <div id="wrapper" bis_skin_checked="1">
+        <div class="container" bis_skin_checked="1">
+            <h1>HTML5 Adaptive Livestream for MPEG-DASH</h1>
+            <h2>The livestream play everywhere with low startup delay, no buffering and in highest quality.</h2>
+            <div class="content" bis_skin_checked="1">
+                <div bis_skin_checked="1">
+                    <div data-shaka-player-container="" shaka-controls="true" class="shaka-video-container" bis_skin_checked="1" style="cursor: none;"><video data-shaka-player="" id="video" poster="https://www.arvancloud.ir/blog/wp-content//uploads/2022/11/What-is-MPEG-Cover-1440x720.jpg" class="shaka-video" src="blob:https://watch-ad.rf.gd/7b8874ac-42a6-43de-b499-9fe1a1fc4f07"></video>
+                        <canvas
+                            class="shaka-canvas-container"></canvas><canvas class="shaka-vr-canvas-container"></canvas>
+                            <div class="shaka-controls-container" bis_skin_checked="1">
+                                <div class="shaka-scrim-container" bis_skin_checked="1"></div>
+                                <div class="shaka-hidden-fast-forward-container" bis_skin_checked="1">
+                                    <div class="shaka-fast-foward-container" bis_skin_checked="1"><span>0s</span><span class="shaka-forward-rewind-container-icon">fast_forward</span></div>
+                                </div>
+                                <div class="shaka-hidden-rewind-container" bis_skin_checked="1">
+                                    <div class="shaka-rewind-container" bis_skin_checked="1"><span>0s</span><span class="shaka-forward-rewind-container-icon">fast_rewind</span></div>
+                                </div>
+                                <div class="shaka-server-side-ad-container" bis_skin_checked="1"></div>
+                                <div class="shaka-bottom-controls shaka-no-propagation" bis_skin_checked="1">
+                                    <div class="shaka-ad-controls shaka-hidden" bis_skin_checked="1">
+                                        <div class="shaka-ad-position shaka-hidden" bis_skin_checked="1"><span class="shaka-ad-position-span"></span></div>
+                                        <div class="shaka-ad-counter" bis_skin_checked="1"><span class="shaka-ad-counter-span"></span></div>
+                                        <div class="shaka-skip-ad-container" bis_skin_checked="1">
+                                            <div class="shaka-skip-ad-counter shaka-hidden" bis_skin_checked="1"></div><button type="button" class="shaka-skip-ad-button shaka-hidden shaka-no-propagation" disabled="">Skip Ad</button></div>
+                                    </div>
+                                    <div class="shaka-controls-button-panel shaka-show-controls-on-mouse-over" bis_skin_checked="1"><button type="button" class="shaka-small-play-button material-icons-round shaka-tooltip" aria-label="Pause">pause</button><button type="button" class="shaka-current-time" aria-label="Skip ahead to live">- 0:05</button>
+                                        <div
+                                            class="shaka-spacer" aria-hidden="true" bis_skin_checked="1"></div><button type="button" class="shaka-mute-button material-icons-round shaka-tooltip" aria-label="Mute">volume_up</button>
+                                    <div class="shaka-range-container shaka-volume-bar-container" bis_skin_checked="1" style="background: linear-gradient(to right, rgb(255, 255, 255) 100%, rgba(255, 255, 255, 0.54) 100%, rgba(255, 255, 255, 0.54) 100%);"><input class="shaka-range-element shaka-volume-bar" type="range" step="any" min="0" max="100" aria-label="Volume"></div><button type="button" class="shaka-fullscreen-button material-icons-round shaka-tooltip" aria-label="Full screen">fullscreen</button>
+                                    <button
+                                        type="button" class="shaka-overflow-menu-button shaka-no-propagation material-icons-round shaka-tooltip" aria-label="More settings">more_vert</button>
+                                </div>
+                                <div class="shaka-range-container shaka-seek-bar-container" bis_skin_checked="1" style="background: linear-gradient(to right, rgb(255, 255, 255) 47.4717%, rgb(255, 255, 255) 47.4717%, rgb(255, 255, 255) 89.6349%, rgba(255, 255, 255, 0.54) 89.6349%, rgba(255, 255, 255, 0.54) 100%, rgba(255, 255, 255, 0.3) 100%);">
+                                    <div class="shaka-ad-markers" bis_skin_checked="1"></div><input class="shaka-range-element shaka-seek-bar shaka-no-propagation shaka-show-controls-on-mouse-over" type="range" step="any" min="1728547687.6836889" max="1728547737.6836889" aria-label="Seek">
+                                    <div id="shaka-player-ui-thumbnail-container"
+                                        bis_skin_checked="1"><img id="shaka-player-ui-thumbnail-image" draggable="false">
+                                        <div id="shaka-player-ui-thumbnail-time" bis_skin_checked="1"></div>
+                                    </div>
+                                    <div id="shaka-player-ui-time-container" bis_skin_checked="1"></div>
+                                </div>
+                            </div>
+                            <div class="shaka-overflow-menu shaka-no-propagation shaka-show-controls-on-mouse-over shaka-hidden" bis_skin_checked="1"><button type="button" class="shaka-overflow-button shaka-caption-button shaka-tooltip-status" aria-pressed="false" aria-label="Captions" shaka-status="Off"><i class="material-icons-round">closed_caption_disabled</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Captions</span><span class="shaka-current-selection-span">Off</span></label></button>
+                                <button
+                                    type="button" class="shaka-overflow-button shaka-resolution-button shaka-tooltip-status" shaka-status="Auto" aria-label="Resolution"><i class="material-icons-round">settings</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Resolution</span><span class="shaka-current-selection-span">Auto</span></label></button><button type="button"
+                                        class="shaka-overflow-button shaka-language-button shaka-tooltip-status" aria-label="Language" shaka-status="English"><i class="material-icons-round">language</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Language</span><span class="shaka-current-selection-span">English</span></label></button>
+                                    <button
+                                        type="button" class="shaka-overflow-button shaka-chapter-button shaka-tooltip-status shaka-hidden" aria-label="Chapters"><i class="material-icons-round">bookmarks</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Chapters</span><span class="shaka-current-selection-span"></span></label></button><button type="button"
+                                            class="shaka-pip-button shaka-tooltip" aria-label="Enter Picture-in-Picture"><i class="material-icons-round">picture_in_picture_alt</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Picture-in-Picture</span><span class="shaka-current-selection-span">Off</span></label></button>
+                                        <button
+                                            type="button" class="shaka-cast-button shaka-tooltip shaka-hidden" aria-pressed="false" aria-label="Cast..."><i class="material-icons-round">cast</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Cast...</span><span class="shaka-current-selection-span">Off</span></label></button><button type="button"
+                                                class="shaka-overflow-button shaka-playbackrate-button shaka-tooltip-status" aria-label="Playback speed" shaka-status="1x"><i class="material-icons-round">slow_motion_video</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Playback speed</span><span class="shaka-current-selection-span">1x</span></label></button>
+                                            <button
+                                                type="button" class="shaka-recenter-vr-button shaka-tooltip shaka-hidden" aria-pressed="false" aria-label="Recenter"><i class="material-icons-round">control_camera</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Recenter</span><span class="shaka-current-selection-span"></span></label></button>
+                                                <button
+                                                    type="button" class="shaka-toggle-stereoscopic-button shaka-tooltip shaka-hidden" aria-pressed="false" aria-label="Toggle stereoscopic"><i class="material-icons-round">3d_rotation</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Toggle stereoscopic</span><span class="shaka-current-selection-span"></span></label></button>
+                                                    <button
+                                                        type="button" class="shaka-save.video-frame-button shaka-tooltip shaka-hidden" aria-label="Save video frame"><i class="material-icons-round">download</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Save video frame</span><span class="shaka-current-selection-span"></span></label></button>
+                                                        <button
+                                                            type="button" class="shaka-remote-button shaka-tooltip shaka-hidden" aria-pressed="false" aria-label="Cast..."><i class="material-icons-round">cast</i><label class="shaka-overflow-button-label shaka-overflow-menu-only"><span>Cast...</span><span class="shaka-current-selection-span"></span></label></button>
+                            </div>
+                            <div class="shaka-no-propagation shaka-show-controls-on-mouse-over shaka-settings-menu shaka-hidden shaka-text-languages" bis_skin_checked="1"><button type="button" class="shaka-back-to-overflow-button" aria-label="Back"><i class="material-icons-round">arrow_back</i><span>Captions</span></button><button type="button"><span>Bahasa Melayu</span></button><button type="button"><span>中文</span></button>
+                                <button
+                                    type="button"><span>English</span></button><button type="button" class="shaka-turn-captions-off-button" aria-selected="true"><span class="shaka-auto-span shaka-chosen-item">Off</span><i class="material-icons-round shaka-chosen-item" aria-hidden="true">done</i></button></div>
+                            <div
+                                class="shaka-no-propagation shaka-show-controls-on-mouse-over shaka-settings-menu shaka-hidden shaka-resolutions" bis_skin_checked="1"><button type="button" class="shaka-back-to-overflow-button" aria-label="Resolution"><i class="material-icons-round">arrow_back</i><span>Resolution</span></button><button type="button" class="explicit-resolution"><span>1080p50</span></button>
+                                <button
+                                    type="button" class="explicit-resolution"><span>720p</span></button><button type="button" class="explicit-resolution"><span>540p</span></button><button type="button" class="explicit-resolution"><span>480p</span></button><button type="button" class="explicit-resolution"><span>270p (600 kbits/s)</span></button>
+                                    <button
+                                        type="button" class="explicit-resolution"><span>270p13 (360 kbits/s)</span></button><button type="button" class="shaka-enable-abr-button" aria-selected="true"><span class="shaka-auto-span shaka-chosen-item">Auto</span><i class="material-icons-round shaka-chosen-item" aria-hidden="true">done</i></button></div>
+                    <div
+                        class="shaka-no-propagation shaka-show-controls-on-mouse-over shaka-settings-menu shaka-hidden shaka-audio-languages" bis_skin_checked="1"><button type="button" class="shaka-back-to-overflow-button" aria-label="Back"><i class="material-icons-round">arrow_back</i><span>Language</span></button><button type="button" aria-selected="true"><span class="shaka-chosen-item">English</span><i class="material-icons-round shaka-chosen-item" aria-hidden="true">done</i></button>
+                        <button
+                            type="button"><span>Bahasa Melayu</span></button>
+                </div>
+                <div class="shaka-no-propagation shaka-show-controls-on-mouse-over shaka-settings-menu shaka-hidden shaka-chapters" bis_skin_checked="1"><button type="button" class="shaka-back-to-overflow-button" aria-label="Back"><i class="material-icons-round">arrow_back</i><span>Chapters</span></button></div>
+                <div class="shaka-no-propagation shaka-show-controls-on-mouse-over shaka-settings-menu shaka-hidden shaka-playback-rates"
+                    bis_skin_checked="1"><button type="button" class="shaka-back-to-overflow-button" aria-label="Back"><i class="material-icons-round">arrow_back</i><span>Playback speed</span></button><button type="button"><span>0.5x</span></button><button type="button"><span>0.75x</span></button>
+                    <button
+                        type="button" aria-selected="true"><span class="shaka-chosen-item">1x</span><i class="material-icons-round shaka-chosen-item" aria-hidden="true">done</i></button><button type="button"><span>1.25x</span></button><button type="button"><span>1.5x</span></button>
+                        <button
+                            type="button"><span>1.75x</span></button><button type="button"><span>2x</span></button></div>
             </div>
-            <div id="main_settings" bis_skin_checked="1" class="playlist-ready">
-                <p class="hint i18n ALIGNCENTER" data-langid="corsHint">⚠ Some channels might not play due to strict CORS policy. <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin" target="_blank">More info and how to fix this</a>.</p>
-                <div class="form-row" bis_skin_checked="1">
-                    <label class="i18n" for="sLangId" data-langid="chooseLang">Language</label>
-                    <select id="sLangId" name="lang" onchange="setLangId(this.value);" autofocus="true" class="focusable" data-index="0">
-						<option value="en" selected="selected">English</option>
-						<option value="cs">český</option>
-						<option value="de">Deutsch</option>
-						<option value="es">Español</option>
-						<option value="fr">Français</option>
-						<option value="el">Ελληνικά</option>
-						<option value="it">Italiano</option>
-						<option value="id">Bahasa Indonesia</option>
-						<option value="ko">한국어</option>
-						<option value="no">Norsk</option>
-						<option value="pl">Polski</option>
-						<option value="pt">Português</option>
-						<option value="ru">Русский</option>
-						<option value="ro">Română</option>
-						<option value="fi">Suomalainen</option>
-						<option value="ar">عربي</option>
-						<option value="tr">Türk</option>
-						<option value="vi">Tiếng Việt</option>
-						<option value="uk">Українська</option>
-					</select>
-                </div>
-                <div class="form-row" bis_skin_checked="1">
-                    <label class="i18n" data-langid="localLoadLabel">Local m3u(8)-file</label>
-                    <div class="input" bis_skin_checked="1">
-                        <input id="file_picker" type="file" class="HIDDEN" oninput="filePickerHandler(this);">
-                        <button onclick="openExplorerButton();" id="settings_open_usb_button" name="explorer_manager" class="i18n FLOATLEFT button focusable" data-langid="openExplorerButton" data-index="1" data-down="3" data-right="2">open explorer</button>
-                        <!--
-						--><button onclick="openHistoryButton();" id="settings_open_history_button" name="history_manager" class="i18n button focusable" data-langid="openHistoryButton" data-index="2" data-left="1">history</button>
-                        <div class="CLEAR" bis_skin_checked="1"></div>
-                    </div>
-                </div>
-                <div class="form-row" bis_skin_checked="1">
-                    <label class="i18n" for="sM3uUrl" data-langid="m3uSource">URL to m3u(8)-file</label>
-                    <input id="sM3uUrl" type="url" name="m3uUrl" value="testbroadcast.m3u.php" placeholder="https://example.com/channels.m3u8" class="focusable" data-index="3" data-up="1">
-                </div>
-                <div class="submit-row" bis_skin_checked="1">
-                    <button onclick="downloadButton();" id="settings_download_button" name="download" class="i18n FLOATLEFT button focusable" data-langid="downloadButton" data-index="4">load playlist</button>
-                    <span id="playlist_downloaded" class="FLOATLEFT icon icon-check" style="display: block;">135 <span class="i18n" data-langid="channelsLoaded">channels</span></span>
-                    <div class="CLEAR" bis_skin_checked="1"></div>
-                    <button onclick="saveButton();" id="settings_save_button" name="save" class="i18n FLOATLEFT button focusable" data-langid="saveButton" data-index="5" data-down="7" data-right="6">save and play</button>
-                    <!--
-					--><button onclick="deleteButton();" id="settings_delete_button" name="delete" class="i18n button focusable" data-langid="deleteButton" data-index="6" data-left="5">delete playlist</button>
-                    <div class="CLEAR" bis_skin_checked="1"></div>
-                </div>
+            <div class="shaka-client-side-ad-container shaka-hidden" bis_skin_checked="1"></div>
+            <div class="shaka-spinner-container shaka-hidden" bis_skin_checked="1">
+                <div class="shaka-spinner" bis_skin_checked="1"><svg class="shaka-spinner-svg" viewBox="0 0 30 30"><circle class="shaka-spinner-path" cx="15" cy="15" r="14.5" fill="none" stroke-width="1" stroke-miterlimit="10"></circle></svg></div>
             </div>
-            <div id="advanced_settings" bis_skin_checked="1">
-                <div class="form-row" bis_skin_checked="1">
-                    <label class="i18n" for="mousewheel_setting" data-langid="chooseMousewheel">Mousewheel</label>
-                    <select id="mousewheel_setting" name="mousewheel" onchange="setMousewheelSetting(this.value);" class="focusable" data-index="0">
-						<option class="i18n" value="volume" selected="selected" data-langid="volumeSetting">Volume up/down</option>
-						<option class="i18n" value="channel" data-langid="channelSetting">Channel forward/back</option>
-					</select>
-                </div>
-                <div class="form-row" bis_skin_checked="1">
-                    <label class="i18n" for="buffer_setting" data-langid="bufferSetting">Buffer</label>
-                    <select id="buffer_setting" name="buffer" onchange="setBufferSetting(this.value);" class="focusable" data-index="1">
-						<option value="-">0s</option>
-						<option value="5">5s</option>
-						<option value="10">10s</option>
-						<option value="15" selected="selected">15s (default)</option>
-						<option value="30">30s</option>
-						<option value="45">45s</option>
-					</select>
-                </div>
-                <div class="form-row" bis_skin_checked="1">
-                    <label class="i18n" for="user_agent_setting" data-langid="customUserAgentSetting">User Agent</label>
-                    <input id="user_agent_setting" type="text" onchange="setUserAgentSetting(this.value);" class="focusable" data-index="2">
-                </div>
-                <div class="form-row" bis_skin_checked="1">
-                    <label class="i18n" for="reload_playlist_setting" data-langid="reloadPlaylistOnStart">Download playlist on each start</label>
-                    <label class="switch">
-						<input id="reload_playlist_setting" type="checkbox" onchange="setReloadPlaylistSetting(this.checked);" class="switch_input focusable" data-index="3">
-						<span class="slider round"></span>
-					</label>
-                </div>
-                <div class="form-row" bis_skin_checked="1">
-                    <label class="i18n" for="enable_epg_setting">EPG</label>
-                    <label class="switch">
-						<input id="enable_epg_setting" type="checkbox" onchange="setEpgEnableSetting(this.checked);" class="switch_input focusable" data-index="4">
-						<span class="slider round"></span>
-					</label>
-                </div>
-                <div id="epg_settings" bis_skin_checked="1">
-                    <div class="form-row" bis_skin_checked="1">
-                        <label class="i18n" for="epg_url" data-langid="epgSource">EPG source</label>
-                        <input id="epg_url" type="url" name="epgUrl" value="../epg.xml.gz" onchange="setEpgUrl(this.value);" class="focusable" data-index="5">
-                        <p id="hint_use_playlist_epg" onclick="setPlaylistEpgUrl();" class="i18n" data-langid="usePlaylistEpgUrl">Use EPG source from your playlist instead?</p>
-                    </div>
-                    <div class="form-row" bis_skin_checked="1">
-                        <label for="epg_time_shift"><span class="i18n" data-langid="epgTimeShift">EPG Timeshift</span> <span id="epg_time_shift_output">(0 h)</span></label>
-                        <input id="epg_time_shift" type="range" name="epgTimeShift" value="0" min="-23" max="23" oninput="updateEpgTimeShift(true);" class="focusable" data-index="6">
-                    </div>
-                    <div class="form-row" bis_skin_checked="1">
-                        <label class="i18n" for="epg_grab_interval" data-langid="epgGrabInterval">EPG grab interval</label>
-                        <select id="epg_grab_interval" name="epgGrabInterval" onchange="updateEpgGrabInterval(true);" class="focusable" data-index="7">
-							<option value="6">6 h</option>
-							<option value="12" selected="selected">12 h</option>
-							<option value="24">24 h</option>
-						</select>
-                    </div>
-                    <div class="submit-row" bis_skin_checked="1">
-                        <button onclick="downloadEpg();" name="download_epg" class="i18n button focusable" data-langid="downloadEpgButton" data-index="8">download EPG now</button>
-                    </div>
-                    <div class="form-row" bis_skin_checked="1">
-                        <div id="epg_downloaded" class="" bis_skin_checked="1">Unknown error. Please check your URL</div>
-                        <div id="epg_downloaded_programms" class="" bis_skin_checked="1"></div>
-                    </div>
-                </div>
-            </div>
-            <div id="premium_settings" bis_skin_checked="1"></div>
-            <div id="settings_footer" bis_skin_checked="1">
-                <p class="i18n" data-langid="helpHint"><span class="LINK" onclick="oInputM3u.scrollIntoView(); oInputM3u.value = 'http://watch-ad.rf.gd/demo-pl.php'; downloadButton();">Insert demo playlist</span><br><br><span class="LINK" onclick="showGuide();">show user guide</span></p>
-                <p class="i18n" data-langid="supportContactLinked" style="margin-top: 36px;">For more information, visit <a href="http://watch-ad.rf.gd/en/" target="_blank">http://watch-ad.rf.gd/en</a></p>
-                <p class="i18n" data-langid="donate">If you like, you can leave a donation:<br><a href="http://watch-ad.rf.gd/?donate=1" target="_blank">http://watch-ad.rf.gd</a></p>
-            </div>
+            <div class="shaka-text-container" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: flex-end;" bis_skin_checked="1"></div>
+        </div>
+        <div class="radio-input" bis_skin_checked="1">
+            <input value="value-1" name="value-radio" id="value-1" type="radio" onclick="loadVideo(0)" checked="">
+            <label for="value-1">HBO</label>
+            <input value="value-2" name="value-radio" id="value-2" type="radio" onclick="loadVideo(1)">
+            <label for="value-2">HBO HITS</label>
+            <input value="value-3" name="value-radio" id="value-3" type="radio" onclick="loadVideo(2)">
+            <label for="value-3">HBO FAMILY</label>
+            <input value="value-4" name="value-radio" id="value-4" type="radio" onclick="loadVideo(3)">
+            <label for="value-4">HBO SIGNATURE</label>
+            <input value="value-5" name="value-radio" id="value-5" type="radio" onclick="loadVideo(4)">
+            <label for="value-5">CINEMAX</label>
+            <input value="value-6" name="value-radio" id="value-6" type="radio" onclick="loadVideo(5)">
+            <label for="value-6">DREAMWORKS</label>
+            <input value="value-7" name="value-radio" id="value-7" type="radio" onclick="loadVideo(6)">
+            <label for="value-7">WARNER</label>
+            <h1>For more information about this livestream, Please contact and leave a message for this
+              <a href="https://facebook.com/angelodave.gonzales" target="_blank">developer.</a>
+            </h1>
         </div>
     </div>
-    <div id="loader" class="fullscreen" bis_skin_checked="1" style="display: none;"></div>
-    <div id="status" class="fullscreen" bis_skin_checked="1" style="display: none;">
-        <div id="status_text" bis_skin_checked="1">Loading playlist. Please wait a moment.<br>30.36 KB</div>
     </div>
-    <div id="controls_activator" class="mouse-controls" bis_skin_checked="1"><span id="controls_arrow">⇣</span></div>
-    <div id="nav_activator" class="mouse-controls" bis_skin_checked="1"></div>
-    <div id="epg_activator" class="mouse-controls" bis_skin_checked="1" style="display: none;"><span id="epg_arrow">⇡</span></div>
-    <div id="nav" bis_skin_checked="1">
-        <div id="search_input_container" bis_skin_checked="1">
-            <div id="search_input" class="form-row" bis_skin_checked="1">
-                <div id="active_group" bis_skin_checked="1"></div>
-                <input id="search_field" maxlength="14" class="i18nPlaceholder" data-langid="searchPlaceholder" type="search" oninput="searchChannels(this.value);" value="" placeholder="Search" disabled="disabled">
-                <p id="search_button_hint" class="i18n" data-langid="redButtonHint"><span class="red-button">A</span> search</p>
-            </div>
-        </div>
-        <div id="list_container_scrollarea" bis_skin_checked="1">
-            <div id="list_container" bis_skin_checked="1">
-                <div id="group_list" class="custom-scrollbar" bis_skin_checked="1">
-                    <ul id="main_nav">
-                        <!--li id="settings_group" class="i18n icon icon-settings" data-langid="settings_menu" data-prev="dynamic_groups_list">Settings</li-->
-                        <li id="nav_epg_overview" class="i18n icon icon-list" data-langid="epg_menu">EPG</li>
-                        <!--li id="nav_search" class="i18n icon icon-search" data-langid="searchPlaceholder">Search</li-->
-                        <li id="open_guide" class="i18n icon icon-guide" data-langid="guide_menu" data-next="dynamic_groups_list">Guide</li>
-                        <!--li id="nav_channel_edit" onclick="toggleChannelEditMode('move')" class="i18n" data-langid="editChannels" data-next="dynamic_groups_list">✏️ Edit channel list</li-->
-                    </ul>
-                    <div class="HR" bis_skin_checked="1"></div>
-                    <h2 class="list_headline i18n" data-langid="groups">Groups</h2>
-                    <ul id="dynamic_groups_list">
-                        <li id="favourites_group" data-prev="main_nav" data-group="__fav" class="i18n" data-langid="favourites">⭐ Favorites</li>
-                        <li id="all_channels_group" class="active" data-group="__all" data-langid="allChannels">All channels</li>
-                        <li id="nav_gr_PREMIUM CABLE TV (AngeloDave)" data-group="PREMIUM CABLE TV (AngeloDave)">PREMIUM CABLE TV (AngeloDave) (135)</li>
-                    </ul>
-                    <div id="channel_edit_help" bis_skin_checked="1"></div>
-                </div>
-                <div id="channel_list" class="custom-scrollbar" onscroll="channelScrollEvent()" bis_skin_checked="1">
-                    <ul id="channel_list_ul">
-                        <li id="nav_ch_1" class="active selected" data-channelnum="1" onmouseenter="focusListItem(this)"><span class="list-ch">1</span> <span class="list-title"> TV5 HD</span>
-                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/TV5_HD_Logo_2023.svg/993px-TV5_HD_Logo_2023.svg.png" alt=""></div>
-                        </li>
-                        <li id="nav_ch_2" class="" data-channelnum="2" onmouseenter="focusListItem(this)"><span class="list-ch">2</span> <span class="list-title"> TRUE FM</span>
-                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Radyo5truefmlogo.webp/600px-Radyo5truefmlogo.webp.png" alt=""></div>
-                        </li>
-                        <li id="nav_ch_3" class="" data-channelnum="3" onmouseenter="focusListItem(this)"><span class="list-ch">3</span> <span class="list-title"> A2Z</span>
-                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/A2Z_Channel_11_Logo.png/375px-A2Z_Channel_11_Logo.png" alt=""></div>
-                        </li>
-                        <li id="nav_ch_4" class="" data-channelnum="4" onmouseenter="focusListItem(this)"><span class="list-ch">4</span> <span class="list-title"> ONE SPORTS</span>
-                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/One_Sports_logo.svg/375px-One_Sports_logo.svg.png" alt=""></div>
-                        </li>
-                        <li id="nav_ch_5" class="" data-channelnum="5" onmouseenter="focusListItem(this)"><span class="list-ch">5</span> <span class="list-title"> TELERADYO SERBISYO</span>
-                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/TeleRadyo_Serbisyo_logo.svg/375px-TeleRadyo_Serbisyo_logo.svg.png" alt=""></div>
-                        </li>
-                        <li id="nav_ch_6" class="" data-channelnum="6" onmouseenter="focusListItem(this)"><span class="list-ch">6</span> <span class="list-title"> TFC</span>
-                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/The_Filipino_Channel_2011_logo.svg/330px-The_Filipino_Channel_2011_logo.svg.png" alt=""></div>
-                        </li>
-                        <li id="nav_ch_7" class="" data-channelnum="7" onmouseenter="focusListItem(this)"><span class="list-ch">7</span> <span class="list-title"> KBS WORLD</span>
-                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/KBS_World.svg/2560px-KBS_World.svg.png" alt=""></div>
-                        </li>
-                        <li id="nav_ch_8" class="" data-channelnum="8" onmouseenter="focusListItem(this)"><span class="list-ch">8</span> <span class="list-title"> NHK WORLD JAPAN</span>
-                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/NHK_World.svg/1200px-NHK_World.svg.png" alt=""></div>
-                        </li>
-                        <li id="nav_ch_9" class="" data-channelnum="9" onmouseenter="focusListItem(this)"><span class="list-ch">9</span> <span class="list-title"> NHK WORLD PREMIUM</span>
-                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Logo_NHK_World_Premium.jpg" alt=""></div>
-                        </li>
-                        <li id="nav_ch_10" class="" data-channelnum="10" onmouseenter="focusListItem(this)"><span class="list-ch">10</span> <span class="list-title"> ANC</span>
-                            <div class="nav_logo" bis_skin_checked="1"><img src="https://www.lyngsat.com/logo/tv/aa/anc-ph.png" alt=""></div>
-                        </li>
-                        <li id="nav_ch_11" class="" data-channelnum="11" onmouseenter="focusListItem(this)"><span class="list-ch">11</span> <span
+    </div>
+    </div>
+    <script>
+        const videos = [{
+                    manifestUri: 'https://linearjitp-playback.astro.com.my/dash-wv/linear/2304/default.mpd',
+                    clearKey: {
+                        'a098896d2b11c5f3906a993c3ba5c610': 'f3f842c54cc96cbbd0bcb96a4cb8a813'
+                    }
+                }, {
+                    manifestUri: 'https://linearjitp-playback.astro.com.my/dash-wv/linear/5055/default.mpd',
+                    clearKey: {
+                        '5d600eb70944d681 truncated 3920bytes...
+    </script>
 
-View all
+    <script src="chrome-extension://lopnbnfpjmgpbppclhclehhgafnifija/aiscripts/script-main.js"></script>
+</body>
+
+</html>
