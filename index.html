@@ -1,114 +1,261 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description" content="Askbootstrap">
-      <meta name="author" content="MIKUY">
-      <title>MIKUY TV</title>
-      <!-- Favicon Icon -->
-      <link rel="icon" type="https://szoneph.online/api/image/png" href="img/favicon.png">
-      <!-- Bootstrap core CSS-->
-      <link href="https://szoneph.online/api/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <!-- Custom fonts for this template-->
-      <link href="https://szoneph.online/api/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-      <!-- Custom styles for this template-->
-      <link href="https://szoneph.online/api/css/osahan.css" rel="stylesheet">
-      <!-- Owl Carousel -->
-      <link rel="stylesheet" href="https://szoneph.online/api/vendor/owl-carousel/owl.carousel.css">
-      <link rel="stylesheet" href="https://szoneph.online/api/vendor/owl-carousel/owl.theme.css">
-   </head>
-   <body id="page-top">
-     <div class="video-block section-padding">
-                  <div class="row">
-                     <div class="col-md-12">
-                            <div id="TeLaSe"></div>
-                            <script>
-                                var playerElement = document.getElementById("TeLaSe");
-                                var player = new Clappr.Player({
-                                    source: "",
-                                    mimeType: 'application/vnd.apple.mpegurl',
-                                    width: '100%',
-                                    height: 'calc(80vh - 80px)',
-                                    autoPlay: false,
-                                    watermark: "",
-                                    watermarkLink: "h",
-                                    position: 'bottom-right',
-                                    mediacontrol: {seekbar: "#00FF00", buttons: "#FFFFFF"},
-                                    mute: false,
-                                    disableErrorScreen: true, // Disable the internal error screen plugin
-                                    plugins: [ChromecastPlugin,ErrorPlugin,LevelSelector,ClapprAds],
-                                    chromecast: {
-                                        appId: "9DFB77C0",
-                                        contentType: "video/m3u8",
-                                        media: {
-                                            type: ChromecastPlugin.None,
-                                            title: "IPTV",
-                                            subtitle: "IPTV Streaming Service"
-                                        }
-                                    },
-                                    errorPlugin: {
-                                        onRetry: function(e) {
-                                        }
-                                      },
-                                    disableVideoTagContextMenu: true,
-                                    playbackNotSupportedMessage: 'Your browser is not supported.'
-                                });
-                                player.attachTo(playerElement);
-                            </script>
-                     </div>
-                  </div>
-               </div>
-               <hr class="mt-0">
-            </div>
-         </div>
-         <!-- /.content-wrapper -->
-      </div>
-      <!-- /#wrapper -->
-      <h3 style="display: flex; flex-wrap: wrap; padding: 8px;">Available Channel</h3>
+<html>
+<script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script>
+<script type="text/javascript" src="chrome-extension://cniohcjecdcdhgmlofniddfoeokbpbpb/trace-anything.js"></script>
+<script type="text/javascript" src="chrome-extension://cniohcjecdcdhgmlofniddfoeokbpbpb/eme-trace-config.js"></script>
+<script type="text/javascript" src="chrome-extension://ddelncaffkgiljpocmaebnnpigpcibop/inject.js"></script>
+<script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script>
+<script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script>
 
-   
-      <table class="table table-dark">
-         <thead>
-           <tr>
-             <th scope="col"><a class="channel nav-link" href="a2z.html"><button type="button"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/TV5_%28Philippines%29_logo.svg/1024px-TV5_%28Philippines%29_logo.svg.png" width="30px"/></a></th>
-             <th scope="col"><a class="channel nav-link" href="gma.html"><button type="button"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/GMA_Network_Logo_Vector.svg/1200px-GMA_Network_Logo_Vector.svg.png" width="30px"/></a></th>
-             <th scope="col"><a class="channel nav-link" data-value="https://qp-pldt-live-grp-05-prod.akamaized.net/out/u/radyo5_qp.m3u8" href="javascript:void(0);"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Radyo5truefmlogo.webp/600px-Radyo5truefmlogo.webp.png" width="30px"/></a></th>
-             <th scope="col"><a class="channel nav-link" data-value="https://live.cltv36.tv:5443/LiveApp/streams/live.m3u8" href="javascript:void(0);"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/CLTV_logo.png" width="30px"/></a></th>
-            </tr>
-         </thead>
-         <tbody>
-           <tr>
-             <th scope="row"><a class="channel nav-link" data-value="https://live.cltv36.tv:5443/LiveApp/streams/live.m3u8" href="javascript:void(0);"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/40/GTV_Philippines_Logo_Vector.svg/577px-GTV_Philippines_Logo_Vector.svg.png" width="30px"/></a></th>
-             <td><a class="channel nav-link" data-value="https://fashiontv-fashiontv-1-eu.rakuten.wurl.tv/playlist.m3u8" href="javascript:void(0);"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/1280px-Fashion_TV_logo.svg.png" width="30px"/></td>
-             <td><a class="channel nav-link" data-value="https://teleradyo-abscbn-ono.amagi.tv/playlist720_p.m3u8" href="javascript:void(0);"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/TeleRadyo_Serbisyo_logo.svg/1200px-TeleRadyo_Serbisyo_logo.svg.png" width="30px"/></td>
-              <td><a class="channel nav-link" data-value="https://cnn-cnninternational-1-eu.rakuten.wurl.tv/f93b9a949a4a8651dd5a2f42e3a2b6f9.m3u8" href="javascript:void(0);"><img src="https://1000logos.net/wp-content/uploads/2021/04/CNN-logo.png" width="30px"/></td>
-            </tr>
-           <tr>
-             <th scope="row"><a class="channel nav-link" data-value="https://cinemaone-abscbn-ono.amagi.tv/index.m3u8" href="javascript:void(0);"><img src="https://static.wikia.nocookie.net/tvfanon6528/images/d/d2/Cinema_One_%282013-.n.v.%29.png" width="30px"/></th>
-             <td><a class="channel nav-link" data-value="https://cinemo-abscbn-ono.amagi.tv/playlist.m3u8" href="javascript:void(0);"><img src="https://static.wikia.nocookie.net/russel/images/f/f2/Cine_Mo%21_3D_Logo_2011.png" width="30px"/></td>
-             <td><a class="channel nav-link" data-value="https://myxnola-abscbn-ono.amagi.tv/index.m3u8" href="javascript:void(0);"><img src="https://assets-myxglobal.abs-cbn.com/wp-content/uploads/2022/07/MYX_New_Logo_Web1.png" width="30px"/></td>
-	     <td><a class="channel nav-link" data-value="https://ancglobal-abscbn-ono.amagi.tv/playlist.m3u8" href="javascript:void(0);"><img src="https://img.mytfc.com/cmsroot/abscms/media/mytfctv/channels/anc/anc-logo.png" width="30px"/></td>
-           </tr>
- 	<tr>
-             <th scope="row"><a class="channel nav-link" data-value="http://170.254.18.106/HBO_PLUS/index.m3u8" href="javascript:void(0);"><img src="https://www.nicepng.com/png/detail/223-2235574_1-hbo-http-hbo-plus-logo-png.png" width="30px"/></th>
-             <td><a class="channel nav-link" data-value="https://z88.ubtvfans.com/live/rx1/59/cb49382c9457a5f3586f9e0635594838/index.m3u8" href="javascript:void(0);"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Animax_logo.svg" width="30px"/></td>
-             <td><a class="channel nav-link" data-value="https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00718-outdoorchannela-outdoortvnz-samsungnz/playlist.m3u8" href="javascript:void(0);"><img src="https://cms.cignal.tv/Upload/Thumbnails/Outdoor-Channel-Thumbnail.png" width="30px"/></td>
-	     <td><a class="channel nav-link" data-value="https://kbsworld-ott.akamaized.net/hls/live/2002341/kbsworld/master.m3u8" href="javascript:void(0);"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/KBS_World_%282009%29.svg/2560px-KBS_World_%282009%29.svg.png" width="30px"/></td>
-           </tr>
-         </tbody>
-       </table>
-<script src="https://kit.fontawesome.com/dbeb83ac19.js" crossorigin="anonymous"></script>
-      <!-- Bootstrap core JavaScript-->
-      <script src="https://szoneph.online/api/vendor/jquery/jquery.min.js"></script>
-      <script src="https://szoneph.online/api/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <!-- Core plugin JavaScript-->
-      <script src="https://szoneph.online/api/vendor/jquery-easing/jquery.easing.min.js"></script>
-      <!-- Owl Carousel -->
-      <script src="https://szoneph.online/api/vendor/owl-carousel/owl.carousel.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-      <!-- Custom scripts for all pages-->
-      <script src="https://szoneph.online/api/js/custom.js"></script>
-   </body>
-</html>
+<head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="no-referrer">
+
+    <title>Watch IPTV v.1.0.6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stream your favorite TV m3u-playlist seamlessly with our feature-rich M3U IPTV browser app. It is completely free and easy to use!">
+    <meta name="keywords" content="IPTV, M3U, M3U8, M3U IPTV, M3U IPTV, Live, TV, Movie, Video, Smart, Smart TV, Playlist, Browser, Desktop, Mobile, Smartphone, free, easy, ad-free, CORS">
+    <meta name="author" content="Jaroslav Herber - Herber eDevelopment">
+    <link rel="canonical" href="http://watch-ad.rf.gd">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/controls.css">
+    <link rel="stylesheet" type="text/css" href="css/epg.css">
+    <link rel="stylesheet" type="text/css" href="css/browser.css">
+    <script>
+        var sAppVersion = '2.2.4',
+            sDeviceFamily = 'Browser';
+    </script>
+    <div id="uuidMachine" bis_skin_checked="1">47106412-5d70-4a3d-b31b-c9d53afc15e7</div>
+    <script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]"
+        src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/../executers/vi-tr.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/lang-browser.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
+    <script disable-devtool-auto="" src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+    <style>
+            @keyframes loading {
+            0% {
+                transform: rotate(0)
+            }
+            to {
+                transform: rotate(360deg)
+            }
+        }
+        
+        .ag-textarea .MuiInputBase-input::-webkit-scrollbar {
+            height: 6px;
+            width: 6px
+        }
+        
+        .ag-textarea .MuiInputBase-input::-webkit-scrollbar-track {
+            background: transparent
+        }
+        
+        .ag-textarea .MuiInputBase-input::-webkit-scrollbar-thumb {
+            background: #dfdfdf;
+            border-radius truncated 500bytes...
+    </style>
+</head>
+
+<body id="body" class="browser" __processed_a2849d35-15ee-4b56-8ba5-03317006f6d3__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJMSU5LRURJTiI6ImRpc2FibGVkIiwiQ09ORklHIjoiZGlzYWJsZWQifSwidmVyc2lvbiI6IjIuMC4xNiIsInNjb3JlIjoyMDAxNn1d">
+    <div id="history_manager" class="fullscreen" bis_skin_checked="1">
+        <div id="history_manager_content" class="fullscreen-popup" bis_skin_checked="1"></div>
+    </div>
+    <div id="settings" bis_skin_checked="1" style="display: none;">
+        <div id="settings_form" bis_skin_checked="1">
+            <div id="settings_tabs" bis_skin_checked="1">
+                <div id="settings_general_tab" class="tab i18n active" onclick="toggleAdvancedSettings(1);" data-langid="tabGeneralSettings" bis_skin_checked="1">General Settings</div>
+                <div id="settings_advanced_tab" class="tab i18n" onclick="toggleAdvancedSettings(2);" data-langid="tabAdvancedSettings" bis_skin_checked="1">Advanced Settings</div>
+                <div class="CLEAR" bis_skin_checked="1"></div>
+            </div>
+            <div id="main_settings" bis_skin_checked="1" class="playlist-ready">
+                <p class="hint i18n ALIGNCENTER" data-langid="corsHint">⚠ Some channels might not play due to strict CORS policy. <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin" target="_blank">More info and how to fix this</a>.</p>
+                <div class="form-row" bis_skin_checked="1">
+                    <label class="i18n" for="sLangId" data-langid="chooseLang">Language</label>
+                    <select id="sLangId" name="lang" onchange="setLangId(this.value);" autofocus="true" class="focusable" data-index="0">
+						<option value="en" selected="selected">English</option>
+						<option value="cs">český</option>
+						<option value="de">Deutsch</option>
+						<option value="es">Español</option>
+						<option value="fr">Français</option>
+						<option value="el">Ελληνικά</option>
+						<option value="it">Italiano</option>
+						<option value="id">Bahasa Indonesia</option>
+						<option value="ko">한국어</option>
+						<option value="no">Norsk</option>
+						<option value="pl">Polski</option>
+						<option value="pt">Português</option>
+						<option value="ru">Русский</option>
+						<option value="ro">Română</option>
+						<option value="fi">Suomalainen</option>
+						<option value="ar">عربي</option>
+						<option value="tr">Türk</option>
+						<option value="vi">Tiếng Việt</option>
+						<option value="uk">Українська</option>
+					</select>
+                </div>
+                <div class="form-row" bis_skin_checked="1">
+                    <label class="i18n" data-langid="localLoadLabel">Local m3u(8)-file</label>
+                    <div class="input" bis_skin_checked="1">
+                        <input id="file_picker" type="file" class="HIDDEN" oninput="filePickerHandler(this);">
+                        <button onclick="openExplorerButton();" id="settings_open_usb_button" name="explorer_manager" class="i18n FLOATLEFT button focusable" data-langid="openExplorerButton" data-index="1" data-down="3" data-right="2">open explorer</button>
+                        <!--
+						--><button onclick="openHistoryButton();" id="settings_open_history_button" name="history_manager" class="i18n button focusable" data-langid="openHistoryButton" data-index="2" data-left="1">history</button>
+                        <div class="CLEAR" bis_skin_checked="1"></div>
+                    </div>
+                </div>
+                <div class="form-row" bis_skin_checked="1">
+                    <label class="i18n" for="sM3uUrl" data-langid="m3uSource">URL to m3u(8)-file</label>
+                    <input id="sM3uUrl" type="url" name="m3uUrl" value="testbroadcast.m3u.php" placeholder="https://example.com/channels.m3u8" class="focusable" data-index="3" data-up="1">
+                </div>
+                <div class="submit-row" bis_skin_checked="1">
+                    <button onclick="downloadButton();" id="settings_download_button" name="download" class="i18n FLOATLEFT button focusable" data-langid="downloadButton" data-index="4">load playlist</button>
+                    <span id="playlist_downloaded" class="FLOATLEFT icon icon-check" style="display: block;">135 <span class="i18n" data-langid="channelsLoaded">channels</span></span>
+                    <div class="CLEAR" bis_skin_checked="1"></div>
+                    <button onclick="saveButton();" id="settings_save_button" name="save" class="i18n FLOATLEFT button focusable" data-langid="saveButton" data-index="5" data-down="7" data-right="6">save and play</button>
+                    <!--
+					--><button onclick="deleteButton();" id="settings_delete_button" name="delete" class="i18n button focusable" data-langid="deleteButton" data-index="6" data-left="5">delete playlist</button>
+                    <div class="CLEAR" bis_skin_checked="1"></div>
+                </div>
+            </div>
+            <div id="advanced_settings" bis_skin_checked="1">
+                <div class="form-row" bis_skin_checked="1">
+                    <label class="i18n" for="mousewheel_setting" data-langid="chooseMousewheel">Mousewheel</label>
+                    <select id="mousewheel_setting" name="mousewheel" onchange="setMousewheelSetting(this.value);" class="focusable" data-index="0">
+						<option class="i18n" value="volume" selected="selected" data-langid="volumeSetting">Volume up/down</option>
+						<option class="i18n" value="channel" data-langid="channelSetting">Channel forward/back</option>
+					</select>
+                </div>
+                <div class="form-row" bis_skin_checked="1">
+                    <label class="i18n" for="buffer_setting" data-langid="bufferSetting">Buffer</label>
+                    <select id="buffer_setting" name="buffer" onchange="setBufferSetting(this.value);" class="focusable" data-index="1">
+						<option value="-">0s</option>
+						<option value="5">5s</option>
+						<option value="10">10s</option>
+						<option value="15" selected="selected">15s (default)</option>
+						<option value="30">30s</option>
+						<option value="45">45s</option>
+					</select>
+                </div>
+                <div class="form-row" bis_skin_checked="1">
+                    <label class="i18n" for="user_agent_setting" data-langid="customUserAgentSetting">User Agent</label>
+                    <input id="user_agent_setting" type="text" onchange="setUserAgentSetting(this.value);" class="focusable" data-index="2">
+                </div>
+                <div class="form-row" bis_skin_checked="1">
+                    <label class="i18n" for="reload_playlist_setting" data-langid="reloadPlaylistOnStart">Download playlist on each start</label>
+                    <label class="switch">
+						<input id="reload_playlist_setting" type="checkbox" onchange="setReloadPlaylistSetting(this.checked);" class="switch_input focusable" data-index="3">
+						<span class="slider round"></span>
+					</label>
+                </div>
+                <div class="form-row" bis_skin_checked="1">
+                    <label class="i18n" for="enable_epg_setting">EPG</label>
+                    <label class="switch">
+						<input id="enable_epg_setting" type="checkbox" onchange="setEpgEnableSetting(this.checked);" class="switch_input focusable" data-index="4">
+						<span class="slider round"></span>
+					</label>
+                </div>
+                <div id="epg_settings" bis_skin_checked="1">
+                    <div class="form-row" bis_skin_checked="1">
+                        <label class="i18n" for="epg_url" data-langid="epgSource">EPG source</label>
+                        <input id="epg_url" type="url" name="epgUrl" value="../epg.xml.gz" onchange="setEpgUrl(this.value);" class="focusable" data-index="5">
+                        <p id="hint_use_playlist_epg" onclick="setPlaylistEpgUrl();" class="i18n" data-langid="usePlaylistEpgUrl">Use EPG source from your playlist instead?</p>
+                    </div>
+                    <div class="form-row" bis_skin_checked="1">
+                        <label for="epg_time_shift"><span class="i18n" data-langid="epgTimeShift">EPG Timeshift</span> <span id="epg_time_shift_output">(0 h)</span></label>
+                        <input id="epg_time_shift" type="range" name="epgTimeShift" value="0" min="-23" max="23" oninput="updateEpgTimeShift(true);" class="focusable" data-index="6">
+                    </div>
+                    <div class="form-row" bis_skin_checked="1">
+                        <label class="i18n" for="epg_grab_interval" data-langid="epgGrabInterval">EPG grab interval</label>
+                        <select id="epg_grab_interval" name="epgGrabInterval" onchange="updateEpgGrabInterval(true);" class="focusable" data-index="7">
+							<option value="6">6 h</option>
+							<option value="12" selected="selected">12 h</option>
+							<option value="24">24 h</option>
+						</select>
+                    </div>
+                    <div class="submit-row" bis_skin_checked="1">
+                        <button onclick="downloadEpg();" name="download_epg" class="i18n button focusable" data-langid="downloadEpgButton" data-index="8">download EPG now</button>
+                    </div>
+                    <div class="form-row" bis_skin_checked="1">
+                        <div id="epg_downloaded" class="" bis_skin_checked="1">Unknown error. Please check your URL</div>
+                        <div id="epg_downloaded_programms" class="" bis_skin_checked="1"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="premium_settings" bis_skin_checked="1"></div>
+            <div id="settings_footer" bis_skin_checked="1">
+                <p class="i18n" data-langid="helpHint"><span class="LINK" onclick="oInputM3u.scrollIntoView(); oInputM3u.value = 'http://watch-ad.rf.gd/demo-pl.php'; downloadButton();">Insert demo playlist</span><br><br><span class="LINK" onclick="showGuide();">show user guide</span></p>
+                <p class="i18n" data-langid="supportContactLinked" style="margin-top: 36px;">For more information, visit <a href="http://watch-ad.rf.gd/en/" target="_blank">http://watch-ad.rf.gd/en</a></p>
+                <p class="i18n" data-langid="donate">If you like, you can leave a donation:<br><a href="http://watch-ad.rf.gd/?donate=1" target="_blank">http://watch-ad.rf.gd</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="loader" class="fullscreen" bis_skin_checked="1" style="display: none;"></div>
+    <div id="status" class="fullscreen" bis_skin_checked="1" style="display: none;">
+        <div id="status_text" bis_skin_checked="1">Loading playlist. Please wait a moment.<br>30.36 KB</div>
+    </div>
+    <div id="controls_activator" class="mouse-controls" bis_skin_checked="1"><span id="controls_arrow">⇣</span></div>
+    <div id="nav_activator" class="mouse-controls" bis_skin_checked="1"></div>
+    <div id="epg_activator" class="mouse-controls" bis_skin_checked="1" style="display: none;"><span id="epg_arrow">⇡</span></div>
+    <div id="nav" bis_skin_checked="1">
+        <div id="search_input_container" bis_skin_checked="1">
+            <div id="search_input" class="form-row" bis_skin_checked="1">
+                <div id="active_group" bis_skin_checked="1"></div>
+                <input id="search_field" maxlength="14" class="i18nPlaceholder" data-langid="searchPlaceholder" type="search" oninput="searchChannels(this.value);" value="" placeholder="Search" disabled="disabled">
+                <p id="search_button_hint" class="i18n" data-langid="redButtonHint"><span class="red-button">A</span> search</p>
+            </div>
+        </div>
+        <div id="list_container_scrollarea" bis_skin_checked="1">
+            <div id="list_container" bis_skin_checked="1">
+                <div id="group_list" class="custom-scrollbar" bis_skin_checked="1">
+                    <ul id="main_nav">
+                        <!--li id="settings_group" class="i18n icon icon-settings" data-langid="settings_menu" data-prev="dynamic_groups_list">Settings</li-->
+                        <li id="nav_epg_overview" class="i18n icon icon-list" data-langid="epg_menu">EPG</li>
+                        <!--li id="nav_search" class="i18n icon icon-search" data-langid="searchPlaceholder">Search</li-->
+                        <li id="open_guide" class="i18n icon icon-guide" data-langid="guide_menu" data-next="dynamic_groups_list">Guide</li>
+                        <!--li id="nav_channel_edit" onclick="toggleChannelEditMode('move')" class="i18n" data-langid="editChannels" data-next="dynamic_groups_list">✏️ Edit channel list</li-->
+                    </ul>
+                    <div class="HR" bis_skin_checked="1"></div>
+                    <h2 class="list_headline i18n" data-langid="groups">Groups</h2>
+                    <ul id="dynamic_groups_list">
+                        <li id="favourites_group" data-prev="main_nav" data-group="__fav" class="i18n" data-langid="favourites">⭐ Favorites</li>
+                        <li id="all_channels_group" class="active" data-group="__all" data-langid="allChannels">All channels</li>
+                        <li id="nav_gr_PREMIUM CABLE TV (AngeloDave)" data-group="PREMIUM CABLE TV (AngeloDave)">PREMIUM CABLE TV (AngeloDave) (135)</li>
+                    </ul>
+                    <div id="channel_edit_help" bis_skin_checked="1"></div>
+                </div>
+                <div id="channel_list" class="custom-scrollbar" onscroll="channelScrollEvent()" bis_skin_checked="1">
+                    <ul id="channel_list_ul">
+                        <li id="nav_ch_1" class="active selected" data-channelnum="1" onmouseenter="focusListItem(this)"><span class="list-ch">1</span> <span class="list-title"> TV5 HD</span>
+                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/TV5_HD_Logo_2023.svg/993px-TV5_HD_Logo_2023.svg.png" alt=""></div>
+                        </li>
+                        <li id="nav_ch_2" class="" data-channelnum="2" onmouseenter="focusListItem(this)"><span class="list-ch">2</span> <span class="list-title"> TRUE FM</span>
+                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Radyo5truefmlogo.webp/600px-Radyo5truefmlogo.webp.png" alt=""></div>
+                        </li>
+                        <li id="nav_ch_3" class="" data-channelnum="3" onmouseenter="focusListItem(this)"><span class="list-ch">3</span> <span class="list-title"> A2Z</span>
+                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/A2Z_Channel_11_Logo.png/375px-A2Z_Channel_11_Logo.png" alt=""></div>
+                        </li>
+                        <li id="nav_ch_4" class="" data-channelnum="4" onmouseenter="focusListItem(this)"><span class="list-ch">4</span> <span class="list-title"> ONE SPORTS</span>
+                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/One_Sports_logo.svg/375px-One_Sports_logo.svg.png" alt=""></div>
+                        </li>
+                        <li id="nav_ch_5" class="" data-channelnum="5" onmouseenter="focusListItem(this)"><span class="list-ch">5</span> <span class="list-title"> TELERADYO SERBISYO</span>
+                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/TeleRadyo_Serbisyo_logo.svg/375px-TeleRadyo_Serbisyo_logo.svg.png" alt=""></div>
+                        </li>
+                        <li id="nav_ch_6" class="" data-channelnum="6" onmouseenter="focusListItem(this)"><span class="list-ch">6</span> <span class="list-title"> TFC</span>
+                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/The_Filipino_Channel_2011_logo.svg/330px-The_Filipino_Channel_2011_logo.svg.png" alt=""></div>
+                        </li>
+                        <li id="nav_ch_7" class="" data-channelnum="7" onmouseenter="focusListItem(this)"><span class="list-ch">7</span> <span class="list-title"> KBS WORLD</span>
+                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/KBS_World.svg/2560px-KBS_World.svg.png" alt=""></div>
+                        </li>
+                        <li id="nav_ch_8" class="" data-channelnum="8" onmouseenter="focusListItem(this)"><span class="list-ch">8</span> <span class="list-title"> NHK WORLD JAPAN</span>
+                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/NHK_World.svg/1200px-NHK_World.svg.png" alt=""></div>
+                        </li>
+                        <li id="nav_ch_9" class="" data-channelnum="9" onmouseenter="focusListItem(this)"><span class="list-ch">9</span> <span class="list-title"> NHK WORLD PREMIUM</span>
+                            <div class="nav_logo" bis_skin_checked="1"><img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Logo_NHK_World_Premium.jpg" alt=""></div>
+                        </li>
+                        <li id="nav_ch_10" class="" data-channelnum="10" onmouseenter="focusListItem(this)"><span class="list-ch">10</span> <span class="list-title"> ANC</span>
+                            <div class="nav_logo" bis_skin_checked="1"><img src="https://www.lyngsat.com/logo/tv/aa/anc-ph.png" alt=""></div>
+                        </li>
+                        <li id="nav_ch_11" class="" data-channelnum="11" onmouseenter="focusListItem(this)"><span class="list-ch">11</span> <span
+
+View all
