@@ -415,7 +415,14 @@
       get: function () {
         return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.4044.138 Safari/537.36';
       }
+    // disabling the right click
+		document.addEventListener9('contextmen',(e) => {
 
+			// disable control
+
+			e.preventDefault()
+
+			return false
     
     });
   </script>
