@@ -931,6 +931,11 @@
           '31363231383438333031323033393138' : '38694e34324d543478316b7455753437'
         }
       },
+        manifestUri: 'http://143.44.136.112:6910/001/2/ch00000090990000001093/manifest.mpd?virtualDomain=001.live_hls.zte.com',
+        clearKey: {
+          '31363231383438333031323033393138' : '38694e34324d543478316b7455753437'
+        }
+      },
     ];
 
 
@@ -1014,7 +1019,10 @@
 
     Object.defineProperty(navigator, 'userAgent', {
       get: function () {
-        return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.4044.138 Safari/537.36';
+        return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
+     Object.defineProperty(navigator, 'x-forwarded-proto', {
+      get: function () {
+        return 'https';
       }
     });
   </script>
