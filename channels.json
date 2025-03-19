@@ -5,6 +5,7 @@
         "id": "kapcha",
         "name": "KAPAMILYA (TFC)",
         "logo": "https://i.imgur.com/54f9r5A.png",
+	"group": "",
         "stream": "https://d1uf7s78uqso1e.cloudfront.net/out/v1/efa01372657648be830e7c23ff68bea2/index.mpd",
         "clearkey": "bd17afb5dc9648a39be79ee3634dd4b8:3ecf305d54a7729299b93a3d69c02ea5",
         "adaptive_key": "http://143.44.136.74:9443/widevine/?deviceId=02:00:00:00:00:00"
